@@ -55,7 +55,7 @@
 
     @if ($configData['blankPage'] == false && isset($configData['blankPage']))
         <!-- BEGIN: Customizer-->
-        @include('content/pages/customizer')
+        {{-- @include('content/pages/customizer') --}}
         <!-- End: Customizer-->
         <!-- Buynow Button-->
         {{-- @include('content/pages/buy-now') --}}
