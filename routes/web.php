@@ -32,6 +32,7 @@ use App\Http\Controllers\LabController;
 Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
 
 Route::get('/lab', [LabController::class, 'index']);
+Route::get('/lab/datatable', [LabController::class, 'datatable']);
 
 
 /* Route Dashboards */
@@ -241,3 +242,13 @@ Route::get('/maps/leaflet', [ChartsController::class, 'maps_leaflet'])->name('ma
 
 // locale Route
 Route::get('lang/{locale}', [LanguageController::class, 'swap']);
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
