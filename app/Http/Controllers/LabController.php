@@ -11,5 +11,6 @@ class LabController extends Controller
         $pageConfigs = ['pageHeader' => false];
 
         return view('content.lab.datatable', ['pageConfigs' => $pageConfigs]);
+        return view('auth.login');
     }
 }
