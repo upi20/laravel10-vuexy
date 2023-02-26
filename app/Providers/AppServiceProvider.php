@@ -20,9 +20,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // get all data from menu.json file
-        $verticalMenuJson = file_get_contents(base_path('resources/data/menu-data/verticalMenu.json'));
+        $verticalMenuJson = file_get_contents(storage_path('app/menu-data/verticalMenu.json'));
         $verticalMenuData = json_decode($verticalMenuJson);
-        $horizontalMenuJson = file_get_contents(base_path('resources/data/menu-data/horizontalMenu.json'));
+        $horizontalMenuJson = file_get_contents(storage_path('app/menu-data/horizontalMenu.json'));
         $horizontalMenuData = json_decode($horizontalMenuJson);
 
         // Share all menuData to all the views

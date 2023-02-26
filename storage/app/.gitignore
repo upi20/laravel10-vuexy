@@ -1,3 +1,5 @@
 *
 !public/
+!menu-data/
+!menu-data/*
 !.gitignore

@@ -50,6 +50,8 @@ class JetstreamServiceProvider extends ServiceProvider
                 }
             }
         });
+
+        Jetstream::ignoreRoutes();
     }
 
     /**
