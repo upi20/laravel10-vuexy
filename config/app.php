@@ -214,6 +214,7 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
         // custom theme helper
         'Helper' => App\Helpers\Helper::class,
+        'Menu' => App\Models\Menu::class,
     ])->toArray(),
 
 ];

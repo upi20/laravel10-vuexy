@@ -62,16 +62,15 @@ class Menu extends Model
                     foreach ($subSubMenu->getFillable() as $key) {
                         if ($subSubMenu->$key !== null) $subSubMenuItem[$key] = $subSubMenu->$key;
                     }
-                    $subSubMenuResults[] = $subSubMenuItem;
+                    $subSubMenuResults[] = (object)$subSubMenuItem;
                 }
 
-
                 if (count($subSubMenuResults)) $subMenuItem['submenu'] = $subSubMenuResults;
-                $subMenuResults[] = $subMenuItem;
+                $subMenuResults[] = (object)$subMenuItem;
             }
 
-            if (count($subMenuResults)) $parent['submenu'] = $subMenuResults;
-            $results[] = $parent;
+            if (count($subMenuResults)) $parent['submenu'] = (object)$subMenuResults;
+            $results[] = (object)$parent;
         }
         return $results;
     }
