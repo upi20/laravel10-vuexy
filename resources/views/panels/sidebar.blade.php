@@ -1,6 +1,6 @@
 @php
     $configData = Helper::applClasses();
-    $menuData = Cache::remember('menus', 15, function () {
+    $menuData = Cache::remember('menus', now()->addMinutes(5), function () {
         return Menu::menuRender();
     });
 @endphp
