@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80888d50d5ec7e21c35ef3c12bff2a36",
+    "content-hash": "962b632df81690963b88965d1eaba6dc",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1081,6 +1081,61 @@
                 }
             ],
             "time": "2021-10-07T12:57:01+00:00"
+        },
+        {
+            "name": "haruncpi/laravel-user-activity",
+            "version": "dev-hotfix",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/upi20/laravel-user-activity.git",
+                "reference": "a67198eef145eaf972e635e23fad1d4e8882a618"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/upi20/laravel-user-activity/zipball/a67198eef145eaf972e635e23fad1d4e8882a618",
+                "reference": "a67198eef145eaf972e635e23fad1d4e8882a618",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Haruncpi\\LaravelUserActivity\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Haruncpi\\LaravelUserActivity\\": "src"
+                }
+            },
+            "scripts": {
+                "phpunit": [
+                    "phpunit"
+                ]
+            },
+            "license": [
+                "cc-by-4.0"
+            ],
+            "authors": [
+                {
+                    "name": "MD.HARUN-UR-RASHID",
+                    "email": "harun.cox@gmail.com"
+                }
+            ],
+            "description": "Monitor user activity easily!",
+            "keywords": [
+                "activity",
+                "laravel",
+                "user"
+            ],
+            "support": {
+                "source": "https://github.com/upi20/laravel-user-activity/tree/hotfix"
+            },
+            "time": "2023-02-26T15:05:44+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",
@@ -8639,6 +8694,12 @@
     ],
     "aliases": [
         {
+            "package": "haruncpi/laravel-user-activity",
+            "version": "dev-hotfix",
+            "alias": "1.1.0",
+            "alias_normalized": "1.1.0.0"
+        },
+        {
             "package": "orangehill/iseed",
             "version": "dev-hotfix",
             "alias": "3.0.3",
@@ -8647,6 +8708,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "haruncpi/laravel-user-activity": 20,
         "orangehill/iseed": 20
     },
     "prefer-stable": true,
