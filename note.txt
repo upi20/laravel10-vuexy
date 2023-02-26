@@ -1,0 +1,1 @@
+composer require "orangehill/iseed:dev-hotfix as 3.0.3"
