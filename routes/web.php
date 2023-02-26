@@ -31,8 +31,14 @@ use App\Http\Controllers\LabController;
 // Main Page Route
 Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
 
-Route::get('/lab', [LabController::class, 'index']);
-Route::get('/lab/datatable', [LabController::class, 'datatable']);
+Route::controller(LabController::class)->prefix('lab')->group(function () {
+    Route::get('/', 'index');
+    Route::get('/datatable', 'datatable');
+
+    // menu
+    Route::get('/menu/seed', 'menuSeed');
+    Route::get('/menu/render', 'menuRender');
+});
 
 
 /* Route Dashboards */

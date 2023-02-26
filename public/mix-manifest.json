@@ -1436,6 +1436,8 @@
     "/data/kanban.json": "/data/kanban.json",
     "/data/menu-data/horizontalMenu.json": "/data/menu-data/horizontalMenu.json",
     "/data/menu-data/verticalMenu.json": "/data/menu-data/verticalMenu.json",
+    "/data/menu-datas/horizontalMenu.json": "/data/menu-datas/horizontalMenu.json",
+    "/data/menu-datas/verticalMenu.json": "/data/menu-datas/verticalMenu.json",
     "/data/permissions-list.json": "/data/permissions-list.json",
     "/data/projects-list.json": "/data/projects-list.json",
     "/data/search.json": "/data/search.json",

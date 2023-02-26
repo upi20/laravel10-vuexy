@@ -14,7 +14,7 @@ class UserProfileController extends Controller
      */
     public function account(Request $request)
     {
-        return view('content.pages.page-account-settings-account', [
+        return view('content.apps.user.app-user-view-account', [
             'request' => $request,
             'user' => $request->user(),
         ]);
